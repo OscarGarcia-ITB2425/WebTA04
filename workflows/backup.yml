@@ -1,0 +1,32 @@
+name: Backup Website
+
+on:
+  push:
+    branches:
+      - main  # Se ejecuta en cada push a la rama 'main'
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest  # Utilizamos un contenedor con Ubuntu
+
+    steps:
+      # Paso 1: Verifica el código del repositorio
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Paso 2: Clona el repositorio de backup (WEBTA04_Backup)
+      - name: Clone Backup Repository
+        run: git clone https://github.com/AlbertoTrujillo-ITB2425/WEBTA04_Backup.git backup-repo
+
+      # Paso 3: Copia los archivos del repositorio original al repositorio de backup
+      - name: Copy Website Files to Backup Repo
+        run: |
+          cp -r ./* backup-repo/
+        
+      # Paso 4: Commit y Push al repositorio de backup
+      - name: Commit and Push Backup to Backup Repo
+        run: |
+          cd backup-repo
+          git add .
+          git commit -m "Backup - $(date)"
+          git push origin main
