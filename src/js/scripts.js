@@ -11,22 +11,6 @@ function toggleInfo(button) {
     }
 }
 
-
-
-// Animación suave para desplazarse a secciones del menú
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1); // Obtener el ID del destino
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
-        }
-    });
-});
-
-
-
 // Validación del formulario de contacto
 const form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
@@ -42,7 +26,6 @@ form.addEventListener('submit', function (e) {
         alert('Por favor, ingrese un email válido.'); // Advertencia para email inválido
     }
 });
-
 
 
 // Bloqueo de acceso a herramientas de desarrollo (Ctrl+U, F12) y clic derecho
