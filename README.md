@@ -2,6 +2,8 @@
 
 Este es un proyecto web alojado en GitHub Pages, que presenta varias páginas HTML estáticas, recursos estáticos (como imágenes y archivos CSS/JS), y una configuración automatizada para copias de seguridad utilizando **GitHub Actions**.
 
+El sitio web está disponible en el dominio **[grup7.blog](http://grup7.blog)**.
+
 ## Estructura del Proyecto
 
 La estructura de archivos de este repositorio es la siguiente:
@@ -20,7 +22,7 @@ La estructura de archivos de este repositorio es la siguiente:
   - **`backup.yml`**: Un archivo de configuración para hacer copias de seguridad automáticas del repositorio utilizando GitHub Actions.
 
 - **`CNAME`**:
-  - Archivo utilizado para configurar un **dominio personalizado** en GitHub Pages. Si deseas usar tu propio dominio, este archivo debe contener el nombre del dominio, como `www.misitio.com`.
+  - Archivo utilizado para configurar un **dominio personalizado** en GitHub Pages. Este archivo contiene el nombre de tu dominio personalizado, en este caso **`grup7.blog`**, que es el que se utiliza para acceder a tu sitio.
 
 - **`alberto.html`**, **`izan.html`**, **`oscar.html`**:
   - Archivos HTML que contienen contenido estático específico sobre diferentes personas o secciones en el sitio web. 
@@ -46,5 +48,27 @@ Este flujo de trabajo asegura que tus archivos estén siempre respaldados y actu
 
 ## Configuración del Dominio Personalizado
 
-Si deseas utilizar un **dominio personalizado** para tu página web, asegúrate de agregar tu dominio en el archivo **`CNAME`**. Solo debes incluir el nombre de dominio, por ejemplo:
+El archivo **`CNAME`** se utiliza para configurar el dominio personalizado de tu sitio web. Este archivo contiene el nombre de tu dominio, que es **`grup7.blog`**.
+
+Si aún no lo has hecho, asegúrate de que en tu proveedor de DNS hayas configurado correctamente las **entradas DNS** para apuntar a los servidores de GitHub Pages. Una vez configurado, tu sitio será accesible a través de la URL **[grup7.blog](http://grup7.blog)**.
+
+## Implementación en GitHub Pages
+
+Este proyecto está configurado para ser servido a través de **GitHub Pages**. Puedes acceder al sitio web a través de la URL proporcionada: **[grup7.blog](http://grup7.blog)**.
+
+## Verificación de Google Search Console
+
+El archivo **`googlef9cdad30c7a90d88.html`** es un archivo de verificación que se usa para confirmar la propiedad del sitio en **Google Search Console**. Si aún no lo has hecho, puedes agregar este archivo a tu cuenta de Google para empezar a recibir análisis sobre el rendimiento y tráfico de tu sitio web.
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, puedes hacer un **fork** de este repositorio y enviar un **pull request** con tus cambios. Si tienes alguna sugerencia o reporte de problemas, no dudes en abrir un **issue**.
+
+## Licencia
+
+Este proyecto está bajo la **Licencia MIT**. Consulta el archivo LICENSE para más detalles.
+
+---
+
+¡Gracias por visitar este repositorio! Si tienes alguna pregunta o necesitas asistencia, no dudes en abrir un **issue** o contactarme.
 
