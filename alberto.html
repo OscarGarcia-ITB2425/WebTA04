@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alberto Trujillo - Portafolio</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/alberto.css">
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -25,11 +26,46 @@
 </header>
 
 <main>
-    <section id="inicio">
-        <h1>Alberto Trujillo - Portafolio</h1>
-        <p>Hola, soy Alberto, Técnico Informático titulado y actualmente estudiante de primer año del ciclo de <strong>ASIXC (Administración de Sistemas Informáticos en Red)</strong> en el <strong>Institut Tecnologic de Barcelona</strong>. Estoy apasionado por el mundo de la informática y siempre buscando aprender y mejorar mis habilidades. ¡Gracias por visitar mi portafolio!</p>
+    <section id="inicio" class="inicio-alberto">
+        <div class="contenido-inicio">
+            <div class="texto-inicio">
+                <h1>Alberto Trujillo - Portafolio</h1>
+                <p>Hola, soy Alberto Trujillo, Técnico Informático titulado y actualmente estudiante de primer año del ciclo de <strong>ASIXC (Administración de Sistemas Informáticos en Red)</strong> en el <strong>Institut Tecnologic de Barcelona</strong>. Estoy apasionado por el mundo de la informática, y siempre en busca de nuevos retos para aprender y mejorar mis habilidades.</p>
+            </div>
+            <div class="imagen-inicio">
+                <img src="assets/images/Alberto/Alberto.webp" alt="Alberto Trujillo">
+            </div>
+        </div>
     </section>
+        <!-- Sección "Sobre Mí" -->
+        <section id="sobre-mi" style="background-color: #fff; padding: 3em 2em; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: auto; margin-bottom: 2em; text-align: center;">
+            <div style="margin-bottom: 2em;">
+                <h2 style="font-size: 2.5rem; color: #333; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5em;">Sobre Mí</h2>
+                <p style="font-size: 1.2rem; color: #555; line-height: 1.8; margin-bottom: 1.5em;">Me apasiona crear soluciones web para tanto grandes como pequeños proyectos. Tengo experiencia en desarrollo frontend y backend, y siempre estoy aprendiendo nuevas tecnologías.</p>
+            </div>
+        </section>   
+    
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li><strong>Administración de Sistemas Operativos:</strong> Windows 10/11, Linux Ubuntu</li>
+            <li><strong>Backups y clonaciones de sistemas operativos</strong> con clonecilla</li>
+            <li><strong>Montaje y mantenimiento de hardware:</strong> PCs, periféricos y redes locales (LAN)</li>
+            <li><strong>Configuración de redes básicas:</strong> Direccionamiento IP, instalación de routers y switches, cableado UTP</li>
+            
+            <li><strong>Gestión de software:</strong> Instalación de sistemas operativos, configuración de aplicaciones, virtualización básica con VirtualBox</li>
+            <li><strong>Seguridad informática:</strong> Copias de seguridad básicas, eliminación de malware, control de acceso a redes</li>
+            
+            <li><strong>Desarrollo Frontend:</strong> HTML5, CSS3</li>
+            <li><strong>Introducción al Backend:</strong> PHP básico (conexiones a base de datos, formularios)</li>
+    
+            <li><strong>Bases de Datos:</strong> MySQL básico (consultas CRUD, creación de tablas)</li>
 
+            <li><strong>Gestión de proyectos:</strong> Uso básico de GitHub y Git para proyectos personales</li>
+            <li><strong>Resolución de problemas:</strong> Diagnóstico de problemas técnicos en hardware/software</li>
+        </ul>
+    </section>
+    
     <section id="proyectos">
         <h2 class="titulo-proyectos">Mis Proyectos</h2>
         <div class="proyectos-container">
@@ -89,7 +125,7 @@
         
                 <!-- Botones -->
                 <div class="botones">
-                    <a href="https://docs.google.com/document/d/1zVTwR07hz-5LD7vyWV4GNlyafsIKMrvVw0i6fZM8YMI/edit?usp=sharing" class="boton">Ver Proyecto</a>
+                    <a href="https://github.com/AlbertoTrujillo-ITB2425/Arducurity" class="boton">Ver Proyecto</a>
                     <button class="boton-mas" onclick="toggleInfo(this)">Más</button>
                 </div>
             </article>
@@ -101,13 +137,7 @@
     
     <section id="contenedor-secciones" style="display: flex; justify-content: space-between; padding: 3em 2em; flex-wrap: wrap;">
     
-        <!-- Sección "Sobre Mí" -->
-        <section id="sobre-mi" style="background-color: #fff; padding: 3em 2em; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: auto; margin-bottom: 2em; text-align: center;">
-            <div style="margin-bottom: 2em;">
-                <h2 style="font-size: 2.5rem; color: #333; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5em;">Sobre Mí</h2>
-                <p style="font-size: 1.2rem; color: #555; line-height: 1.8; margin-bottom: 1.5em;">Me apasiona crear soluciones web para tanto grandes como pequeños proyectos. Tengo experiencia en desarrollo frontend y backend, y siempre estoy aprendiendo nuevas tecnologías.</p>
-            </div>
-        </section>
+
         
     <!-- Sección "Contacto" -->
     <section id="contacto" 
