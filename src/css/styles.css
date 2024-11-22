@@ -91,6 +91,11 @@ main {
     animation: fadeIn 1s ease-out; /* Animación de entrada */
 }
 
+#habilidades{
+    width: 1200px;
+    
+}
+
 /* Animación de entrada */
 @keyframes fadeIn {
     from {
@@ -370,6 +375,11 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.contenido{
+    display: flex;
+    align-items: center;
+
+}
 
 /* Map Responsive */
 .map iframe {
@@ -432,3 +442,4 @@ body {
         margin-bottom: 10px;
     }
 }
+
