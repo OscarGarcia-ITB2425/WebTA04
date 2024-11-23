@@ -197,11 +197,13 @@ h3 {
 /* Contenedor de los proyectos */
 .proyectos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2em;
-    justify-items: center;
-    padding: 0 2em;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Columnas dinámicas */
+    gap: 1em; /* Espacio entre los proyectos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-content: center; /* Centra los elementos verticalmente */
+    padding: 2em; /* Espaciado interno */
 }
+
 
 /* Estilo general de cada proyecto */
 .proyecto {
