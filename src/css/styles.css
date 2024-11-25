@@ -63,6 +63,12 @@ header nav a:hover {
     text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
+.imagen_oscar{
+    width: 20%;
+    height: auto;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
 .btn-descargar {
     background-color: #00aeff; /* Color de fondo del botón */
     color: white; /* Color del texto */
