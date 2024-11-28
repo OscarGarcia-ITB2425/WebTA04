@@ -1,0 +1,178 @@
+/* Estilos Generales */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container img {
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logo-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ddd;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+}
+
+/* Botón CV */
+.btn-descargar {
+    background-color: #00aeff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-descargar:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+/* Main */
+main {
+    padding: 3em 2em;
+    background-color: #f4f4f4;
+}
+
+/* Tarjeta del proyecto */
+.proyecto-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proyecto-card h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.proyecto-contenido {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.proyecto-contenido .imagen {
+    flex: 1;
+}
+
+.proyecto-contenido .imagen img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.proyecto-contenido .texto {
+    flex: 2;
+}
+
+.proyecto-contenido .texto p {
+    margin-bottom: 15px;
+}
+
+.proyecto-contenido .texto h2 {
+    font-size: 1.8rem;
+    color: #0077ff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.proyecto-contenido .texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.proyecto-contenido .texto ul li {
+    background: url('assets/icons/checkmark.png') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #21867a;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .proyecto-contenido {
+        flex-direction: column;
+    }
+
+    .proyecto-contenido .texto {
+        margin-top: 20px;
+    }
+}
