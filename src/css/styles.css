@@ -111,6 +111,46 @@ main {
         opacity: 1;
     }
 }
+/* Estilos para el contenedor */
+.contenedor-imagen-texto {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al inicio verticalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 20px; /* Espacio superior para separar del título */
+}
+
+/* Estilos para la imagen */
+.contenedor-imagen-texto .imagen {
+    flex: 1; /* Ocupa proporcionalmente menos espacio */
+}
+
+.imagen-detalle {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para el texto */
+.contenedor-imagen-texto .texto {
+    flex: 2; /* Ocupa proporcionalmente más espacio */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-imagen-texto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-imagen-texto .imagen,
+    .contenedor-imagen-texto .texto {
+        width: 100%;
+    }
+
+    .contenedor-imagen-texto .texto {
+        margin-top: 20px; /* Espacio superior cuando se apila verticalmente */
+    }
+}
 
 /* Títulos */
 h1, h2, h3 {
